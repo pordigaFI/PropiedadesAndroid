@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".application.PropiedadesRFApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidProjectPDG"
+        tools:targetApi="31">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".application.PropiedadesRFApp"
+            android:exported="false" />
+        <activity
+            android:name=".ui.adapter.PropiedadesAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".data.remote.model.PropiedadDetailDto"
+            android:exported="false" />
+        <activity
+            android:name=".data.remote.model.PropiedadDto"
+            android:exported="false" />
+        <activity
+            android:name=".data.remote.model.RetrofitHelper"
+            android:exported="false" />
+        <activity
+            android:name=".data.PropiedadRepository"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragments.LocalizacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragments.PropiedadDetailFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragments.PropiedadesListFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BienvenidaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Login"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenStarting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

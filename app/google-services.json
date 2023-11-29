@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502386013339",
+    "project_id": "androidprojectpdg",
+    "storage_bucket": "androidprojectpdg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502386013339:android:610b567fc3e90511bc023e",
+        "android_client_info": {
+          "package_name": "com.porfirio.androidprojectpdg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA6eiqYMsvgAKpeB9iiZO12Ww4tIDZ0Fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

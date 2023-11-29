@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rosa">#FFFDA7D4</color>
+    <color name="gris">#FFEEEEEE</color>
+    <color name="AzulTurq">#FF36DEF4</color>
+    <color name="amarillo">#FFF5DC53</color>
+    <color name="azulTurquesa">#FF3FE0DD</color>
+    <color name="rosaMexicano">#FFD14D72</color>
+    <color name="moradoClaro">#FF57375D</color>
+    <color name="rosa2">#FFFF3FA4</color>
+    <color name="crema">#FFFF9B82</color>
+    <color name="rosaClaro">#FFFFC8C8</color>
+    <color name="rosaIntermedio">#FFEF9595</color>
+    <color name="rosaBajito">#FFEFB495</color>
+    <color name="cremaAmarillento">#FFEFD595</color>
+    <color name="amarilloCanario">#FFEBEF95</color>
+    <color name="rosaIntenso">#FFE90064</color>
+</resources>
