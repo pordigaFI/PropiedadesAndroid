@@ -52,6 +52,7 @@
                         android:text="@string/callePropiedad"
                         app:layout_constraintTop_toBottomOf="@id/ivImage"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="20dp"
                         />
 
@@ -75,6 +76,7 @@
                         android:text="@string/coloniaPropiedad"
                         app:layout_constraintTop_toBottomOf="@id/tv1"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -98,6 +100,7 @@
                         android:text="@string/MunicipioPropiedad"
                         app:layout_constraintTop_toBottomOf="@id/tv2"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -121,6 +124,7 @@
                         android:text="@string/estado"
                         app:layout_constraintTop_toBottomOf="@id/tv3"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -144,6 +148,7 @@
                         android:text="@string/m2_terreno"
                         app:layout_constraintTop_toBottomOf="@id/tv4"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -167,6 +172,7 @@
                         android:text="@string/m2_construccion"
                         app:layout_constraintTop_toBottomOf="@id/tv5"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -190,6 +196,7 @@
                         android:text="@string/latitud"
                         app:layout_constraintTop_toBottomOf="@id/tv6"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -213,6 +220,7 @@
                         android:text="@string/longitud"
                         app:layout_constraintTop_toBottomOf="@id/tv7"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -236,6 +244,7 @@
                         android:text="@string/descripcionPropiedad"
                         app:layout_constraintTop_toBottomOf="@id/tv8"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="10dp"
                         />
 
@@ -256,9 +265,10 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         android:layout_width="120dp"
                         android:layout_height="30dp"
-                        android:text="."
+                        android:text="@string/lblpoint"
                         app:layout_constraintTop_toBottomOf="@id/tv9"
                         android:paddingStart="20dp"
+                        android:paddingEnd="5dp"
                         android:layout_marginTop="20dp"
                         />
 

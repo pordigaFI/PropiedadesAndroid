@@ -2,12 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+    <!--con usesCleartextTraffic en verdadero vamos a poder conectarnos en redes no seguras como http-->
     <application
         android:name=".application.PropiedadesRFApp"
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,8 +23,23 @@
         android:theme="@style/Theme.AndroidProjectPDG"
         tools:targetApi="31">
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key"/>
+        <activity
+            android:name=".TimePickerFragment"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".DataPickerFragment"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.AndroidProjectPDG.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".application.PropiedadesRFApp"
@@ -55,7 +75,7 @@
             android:name=".ui.BienvenidaActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ContactsActivity"
+            android:name=".ui.ReporteActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Login"

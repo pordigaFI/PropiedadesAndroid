@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svFrame"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosaClaro"
+    tools:context=".ui.ReporteActivity">
+
+    <TextView
+        android:id="@+id/tvEncabezado"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:text="Reporte Visitas"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEncabezado"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Fecha: "
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvDate"
+        app:layout_constraintTop_toBottomOf="@id/tvEncabezado"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="¿Fecha visita?"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Inicio: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvTime"
+        app:layout_constraintTop_toBottomOf="@id/etDate"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Inicia: "
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvTimeFin"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTime"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Finaliza: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etTimeFin"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvTimeFin"
+        app:layout_constraintTop_toBottomOf="@id/etTime"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Finaliza: "
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvAsesor"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeFin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Asesor: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etAsesor"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvAsesor"
+        app:layout_constraintTop_toBottomOf="@id/etTimeFin"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:autofillHints="name"
+        android:hint="Asesor"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvProperty"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAsesor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="Propiedad: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etProperty"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvProperty"
+        app:layout_constraintTop_toBottomOf="@id/etAsesor"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:hint="Nombre de la Propiedad "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvCliente"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvProperty"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="Cliente: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etCliente"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvCliente"
+        app:layout_constraintTop_toBottomOf="@id/etProperty"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:hint="Cliente"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvCelular"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="Cel jefe:"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etCelular"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/tvCelular"
+        app:layout_constraintTop_toBottomOf="@id/etCliente"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:inputType="phone"
+        android:text="5544568728"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCelular"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="Mensaje: "
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/etMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textStyle="bold"
+        android:text="Me siento en peligro"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#F34444"
+        android:clickable="true"
+        android:text="Enviar SMS"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#55E209"
+        android:clickable="true"
+        android:onClick="clickBtnInsert"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnSend"
+        tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
