@@ -74,7 +74,7 @@
     <string name="latitud">Latitud</string>
     <string name="longitud">Longitud</string>
     <string name="correo_usuario">Correo usuario</string>
-    <string name="ver_mas_detalles">ver más detalles</string>
+    <string name="ver_mas_detalles">ver ubicación</string>
     <string name="diplomado">© Diplomado Móviles</string>
     <string name="topFive">En Puebla y sus alrededores</string>
     <string name="email">Correo electrónico</string>
@@ -90,5 +90,21 @@
     <string name="estatus">Estatus</string>
     <string name="tipoPropiedad">Tipo</string>
     <string name="precioPropiedad">Precio</string>
+    <string name="lblpropiedad">Propiedad:</string>
+    <string name="lblestatus">Estatus:</string>
+    <string name="lbltipo">Tipo:</string>
+    <string name="lblprecio">Precio:</string>
+    <string name="lblpoint">.</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 
 </resources>

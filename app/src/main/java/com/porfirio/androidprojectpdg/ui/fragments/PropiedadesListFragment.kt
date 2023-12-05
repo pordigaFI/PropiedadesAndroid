@@ -48,8 +48,8 @@ class PropiedadesListFragment : Fragment() {
         repository = (requireActivity().application as PropiedadesRFApp).repository
 
         lifecycleScope.launch {
-            //val call: Call<List<GameDto>> = repository.getGames("cm/games/games_list.php")
-            val call: Call<List<PropiedadDto>> = repository.getPropiedadesApiary()  //("tenistas/tenistas_list")
+
+            val call: Call<List<PropiedadDto>> = repository.getPropiedadesApiary()  //("propiedades/propiedades_list")
 
             call.enqueue(object: Callback<List<PropiedadDto>> {
                 override fun onResponse(
@@ -61,10 +61,10 @@ class PropiedadesListFragment : Fragment() {
 
                     Log.d(Constants.LOGTAG, "Respuesta del servidor: ${response.body()}")
 
-                    response.body()?.let{ tenistas ->
+                    response.body()?.let{ propiedades ->
                         binding.rvPropiedades.apply {
                             layoutManager = LinearLayoutManager(requireContext())
-                            adapter = PropiedadesAdapter(tenistas){ propiedad ->
+                            adapter = PropiedadesAdapter(propiedades){ propiedad ->
                                 propiedad.id?.let { id ->
                                     //Aquí va el código para la operación para ver los detalles
                                     requireActivity().supportFragmentManager.beginTransaction()
