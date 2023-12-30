@@ -61,7 +61,7 @@ class BienvenidaActivity: AppCompatActivity() {
 
         binding.btnAccederApp.setOnClickListener {
             firebaseAuth.signOut()
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, ReporteActivity::class.java))
             finish()
         }
 
