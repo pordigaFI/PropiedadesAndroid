@@ -24,6 +24,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.porfirio.androidprojectpdg.R
 import com.porfirio.androidprojectpdg.databinding.ActivityLocalizacionBinding
 import com.porfirio.androidprojectpdg.ui.MainActivity
+import com.porfirio.androidprojectpdg.ui.ReporteActivity
 
 class LocalizacionActivity: AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
@@ -78,9 +79,9 @@ class LocalizacionActivity: AppCompatActivity(), OnMapReadyCallback, LocationLis
             binding.pbLoading.visibility = View.GONE
 
         }
-        val botonIrTenistasListFragment = findViewById<Button>(R.id.btnRegresar)
-        botonIrTenistasListFragment.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        val botonIrREPORTE = findViewById<Button>(R.id.btnRegresar)
+        botonIrREPORTE.setOnClickListener {
+            val intent = Intent(this, ReporteActivity::class.java)
             startActivity(intent)
         }
 

@@ -6,14 +6,17 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
+import com.porfirio.androidprojectpdg.R
 import com.porfirio.androidprojectpdg.application.PropiedadesRFApp
 import com.porfirio.androidprojectpdg.data.PropiedadRepository
 import com.porfirio.androidprojectpdg.data.remote.model.PropiedadDetailDto
 import com.porfirio.androidprojectpdg.databinding.FragmentPropiedadDetailBinding
+import com.porfirio.androidprojectpdg.ui.ReporteActivity
 import com.porfirio.androidprojectpdg.util.Constants
 import kotlinx.coroutines.launch
 import retrofit2.Call
@@ -72,6 +75,12 @@ class PropiedadDetailFragment : Fragment() {
                                 Glide.with(requireContext())
                                     .load(response.body()?.imagen)
                                     .into(ivImage)
+                            }
+
+                            //val botonIrREPORTE = findViewById<Button>(R.id.btnBack)
+                            binding.btnBack.setOnClickListener {
+                                val intent = Intent(requireContext(), ReporteActivity::class.java)
+                                startActivity(intent)
                             }
 
                             binding.btnAdelante.setOnClickListener {

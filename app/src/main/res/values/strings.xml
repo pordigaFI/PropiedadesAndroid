@@ -76,7 +76,7 @@
     <string name="correo_usuario">Correo usuario</string>
     <string name="ver_mas_detalles">ver ubicación</string>
     <string name="diplomado">© Diplomado Móviles</string>
-    <string name="topFive">En Puebla y sus alrededores</string>
+    <string name="topFive">en la capital poblana y sus alrededores</string>
     <string name="email">Correo electrónico</string>
     <string name="pass">Contraseña</string>
     <string name="ingresar">Ingresar</string>
@@ -106,5 +106,22 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="ver_propiedades">Ver Propiedades</string>
+    <string name="reporte_visitas">Reporte Visitas</string>
+    <string name="fecha">Fecha:</string>
+    <string name="fecha_visita">¿Fecha visita?</string>
+    <string name="inicio">Inicio:</string>
+    <string name="inicia">Inicia:</string>
+    <string name="finaliza">Finaliza:</string>
+    <string name="asesor">Asesor:</string>
+    <string name="asesor2">Asesor</string>
+    <string name="propiedad">Propiedad:</string>
+    <string name="nombre_de_la_propiedad">Nombre de la Propiedad</string>
+    <string name="cliente">Cliente:</string>
+    <string name="cel_jefe">Cel jefe:</string>
+    <string name="mensaje">Mensaje:</string>
+    <string name="me_siento_en_peligro">Me siento en peligro</string>
+    <string name="_5544568728">5544568728</string>
+    <string name="enviar_sms">Enviar SMS</string>
 
 </resources>
